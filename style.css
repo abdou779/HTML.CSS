@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: #00c8b4;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #00c8b4;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
+.text {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  background-color: #00494e;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 36px;
+  color: #00c8b4;
+  margin-bottom: 30px;
+}
+
+.buttons .btn {
+  padding: 12px 20px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hire {
+  background-color: #00c8b4;
+  color: #ffffff;
+}
+
+.cv {
+  background-color: #1e293b;
+  color: white;
+}
+.hero-section {
+  padding: 100px 0;
+  background-color: #0b1120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.hero-text {
+  flex: 1;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #00d9ff;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #00d9ff;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #1a1e2e;
+  color: #fff;
+}
+
+.hero-images {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-images img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.illustration img {
+  width: 400px;
+  max-width: 100%;
+}
+.about{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 5rem auto;
+max-width: 1200px;
+gap: 10rem;
+}
+.about-section {
+  padding: 100px 0;
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 90%;
+  gap: 40px;
+}
+
+.image-side {
+  flex: 1;
+}
+
+.image-side img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-side {
+  flex: 1;
+  color: white;
+}
+
+.text-side h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.text-side h2 span {
+  color: #f8fdfe;
+}
+
+.text-side p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+.works{
+background-image: url("assets/svg/background.svg");
+padding: 10rem 10rem;
+margin: 5rem 5rem;
+}
+/* خلفية القسم بالكامل */
+section.Works {
+
+  background-image: url("assets/svg/background.svg");
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* تنسيق العنوان */
+.projectTitle h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projectTitle .aboutname {
+  color: white;
+}
+
+.projectTitle .aboutTitle {
+  color: #00e0d3; /* لون مميز */
+}
+
+/* قائمة المشاريع */
+ul.projectsList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+/* عناصر المشروع */
+ul.projectsList li {
+  background-color: #1b1b2f;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+ul.projectsList li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 224, 211, 0.3);
+}
+
+ul.projectsList img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  ul.projectsList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer {
+  background-color: #0d0d1a;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons .icon {
+  filter: brightness(0) invert(1); /* Makes icons white */
+  transition: transform 0.3s;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2);
+}
+/* الشاشات الصغيرة: الهواتف المحمولة */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .illustration {
+    margin-top: 30px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    margin: 3rem 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  ul.projectsList {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+}
+
+/* الشاشات المتوسطة: التابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero,
+  .about {
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .illustration img {
+    width: 300px;
+  }
+
+  .text-side h2 {
+    font-size: 2.2rem;
+  }
+}
